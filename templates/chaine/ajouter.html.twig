@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter Chaine{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Ajouter Chaine</h1>
+        <div class="row">
+            <div class="col-md-6">
+                {{ form_start(form, {'attr': {'class': 'form-group'}}) }}
+                    <div class="mb-3">
+                        {{ form_label(form.Libelle, 'Libellé', {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.Libelle, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.Diffuseur, 'Diffuseur', {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.Diffuseur, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Créer</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

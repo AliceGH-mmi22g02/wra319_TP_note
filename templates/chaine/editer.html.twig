@@ -1,0 +1,19 @@
+{# modifier.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Editer Chaine{% endblock %}
+
+{% block body %}
+    <h1>Editer Chaine</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

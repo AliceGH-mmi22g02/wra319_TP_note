@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Videos{% endblock %}
+
+{% block body %}
+<h1>Videos</h1>
+<br>
+{% for video in listeVideo %}
+<div>
+    <h3>#{{video.id}} - {{ video.titre }} </h3>
+    <p>{{ video.image}} </p>
+    <p>{{ video.datePublication|date('d/m/y')}} </p>
+</div>
+{% endfor %}
+{% endblock %}

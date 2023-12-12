@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<h1>Accueil</h1>
+<br>
+{% for chaine in listeChaine %}
+<div>
+    <h3>#{{chaine.id}} - {{ chaine.libelle }} </h3>
+    <p>{{ chaine.diffuseur}} </p>
+</div>
+{% endfor %}
+{% endblock %}
